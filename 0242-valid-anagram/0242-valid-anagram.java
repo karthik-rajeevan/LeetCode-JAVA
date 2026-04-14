@@ -3,13 +3,15 @@ class Solution {
         if(s.length()!=t.length()){
             return false;
         }
+        
+            char[] x= s.toCharArray();
+            char[] y= t.toCharArray();
 
-        HashMap<Character, Integer> x = new HashMap<>();
-        HashMap<Character, Integer> y = new HashMap<>();
-        for(int i=0;i<s.length();i++){
-            x.put(s.charAt(i),x.getOrDefault(s.charAt(i),0)+1);
-            y.put(t.charAt(i),y.getOrDefault(t.charAt(i),0)+1);
-        }
-    return x.equals(y);
+            Arrays.sort(x);
+            Arrays.sort(y);
+        
+
+        return Arrays.equals(x,y);
+        
     }
 }
