@@ -1,5 +1,5 @@
 class Solution {
-    public void sortColors(int[] nums) {
+    public void sortColors(int[] nums) { //also try Dutch national flag algorithm
         
         int zeros=0;
         int ones=0;
